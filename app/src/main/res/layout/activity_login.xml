@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/activityContent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/loginToImgurBut"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/login_to_imgur"
+            android:textColor="@color/cardview_dark_background"
+            tools:ignore="PrivateResource" />
+    </RelativeLayout>
+</FrameLayout>

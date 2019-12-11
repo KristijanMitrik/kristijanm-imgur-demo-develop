@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">imgur</string>
+
+
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="logged_in">Logged in.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="image_title_prop">Image title</string>
+    <string name="description_prop">Description</string>
+    <string name="image_title">image title</string>
+    <string name="login_to_imgur">Login to imgur</string>
+    <string name="select_or_capture_image">Select or Capture Image</string>
+    <string name="insert_title">Insert title</string>
+    <string name="insert_description">Insert description</string>
+    <string name="import_your_image_online">Import your image online</string>
+
+
+</resources>

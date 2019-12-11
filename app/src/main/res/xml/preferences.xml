@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:title="Sync switch"
+        android:key="sync"
+        android:summary="turn on/off caching"
+        android:defaultValue="false"
+        />
+
+    <Preference
+        android:key="sample_key"
+        android:title="Logout"></Preference>
+</PreferenceScreen>

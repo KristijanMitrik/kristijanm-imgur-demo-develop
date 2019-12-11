@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chooseImageMargin"
+        android:text="@string/select_or_capture_image"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/chooseImageMargin"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/inserttitle"
+        android:layout_width="@dimen/editTextWidthS"
+        android:layout_height="@dimen/editTextHeightS"
+        android:layout_gravity="center"
+        android:hint="@string/insert_title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/insertdesc"
+        app:layout_constraintTop_toBottomOf="@id/inserttitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/editTextWidthS"
+        android:layout_height="@dimen/editTextHeightS"
+        android:layout_gravity="center"
+        android:hint="@string/insert_description"
+        android:inputType="text" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/insertdesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/importimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chooseImageMargin"
+        android:text="@string/import_your_image_online"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+</android.support.constraint.ConstraintLayout>
